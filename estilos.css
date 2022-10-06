@@ -21,6 +21,7 @@ body{
     margin: 1em;
     color: white;
 }
+
 .search{
     display: flex;
     justify-content: center;
@@ -51,7 +52,29 @@ button:hover {
     border-radius: 18px;
     background: #7c7c7c2b;
     color: white;
-    font-size: 120%;
+    font-size: 120%;     
+}
+.temp{
+    margin: 0px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.weather.loading{
+    visibility: hidden;
+}
+.weather.loading::after{
+    display: flex;
+    content: "Loading...";
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    visibility: visible;
+    background-image: url(loading.gif);
     
-   
+    
+
+
 }
